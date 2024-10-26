@@ -25,9 +25,9 @@ jobs:
       # Docker 이미지 빌드 및 태그
       - name: Build Docker image
         run: |
-          docker build -t ghcr.io/${{ github.repository }}:latest .
+          docker build -t ghcr.io/practical_mlops:latest .
 
       # Docker 이미지 푸시
       - name: Push Docker image
         run: |
-          docker push ghcr.io/${{ github.repository }}:latest
+          docker push ghcr.io/practical_mlops:latest
